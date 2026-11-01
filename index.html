@@ -146,13 +146,7 @@
   .browser { background: var(--baby-soft); padding: 14px; border-bottom: 1px solid var(--line); }
   .dots { display: flex; gap: 6px; margin-bottom: 12px; }
   .dots i { width: 10px; height: 10px; border-radius: 50%; background: var(--white); border: 1px solid var(--line); }
-  .screen { height: 170px; border-radius: 16px; background: var(--white); padding: 16px; display: flex; flex-direction: column; gap: 10px; overflow: hidden; }
-  .screen b { display: block; height: 12px; border-radius: 999px; background: var(--baby-soft); }
-  .screen b.t { width: 60%; height: 18px; background: var(--ink); opacity: .85; }
-  .screen b.s { width: 80%; }
-  .screen b.btnph { width: 34%; height: 22px; background: var(--blue); }
-  .screen .tiles { display: flex; gap: 8px; margin-top: auto; }
-  .screen .tiles b { flex: 1; height: 44px; border-radius: 12px; }
+  .shot { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 16px; }
   .work-info { padding: 22px 26px 26px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
   .work-info h3 { font-size: 18px; }
   .tag { font-size: 12px; font-weight: 600; padding: 4px 12px; border-radius: 999px; background: var(--baby-soft); color: var(--blue); border: 1px solid var(--line); }
@@ -165,7 +159,6 @@
   .chip:hover { transform: translateY(-2px); color: var(--blue); }
   .chip[aria-pressed="true"] { background: var(--blue); color: var(--white); border-color: var(--blue); }
   .demo-grid .work-card.hide { display: none; }
-  .demo-grid .screen b.t, .demo-grid .screen b.btnph { background: var(--accent); }
   .demo-grid .work-card .browser { transition: background .3s; }
   .demo-grid .work-card:hover .browser { background: var(--baby); }
   .demo-cta { margin-top: 32px; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
@@ -360,39 +353,39 @@
       <div class="cards-3 demo-grid">
         <article class="card glass work-card reveal" data-cat="beauty" style="--accent:#0B1B3F">
           <div class="browser"><div class="dots"><i></i><i></i><i></i></div>
-            <div class="screen"><b class="t"></b><b class="s"></b><b class="btnph"></b><div class="tiles"><b></b><b></b><b></b></div></div>
+            <img class="shot" src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=700&h=440&q=75" alt="Summit Cuts barbershop demo" loading="lazy" width="700" height="440">
           </div>
-          <div class="work-info"><h3>Barbershop</h3><span class="tag">Concept</span><a href="#contact" class="work-link">Open live demo →</a></div>
+          <div class="work-info"><h3>Barbershop</h3><span class="tag">Live demo</span><a href="demos/barbershop/" class="work-link">Open live demo →</a></div>
         </article>
         <article class="card glass work-card reveal" data-cat="trades" style="--accent:#2563EB">
           <div class="browser"><div class="dots"><i></i><i></i><i></i></div>
-            <div class="screen"><b class="t"></b><b class="s"></b><b class="btnph"></b><div class="tiles"><b></b><b></b><b></b></div></div>
+            <img class="shot" src="https://images.unsplash.com/photo-1633759593085-1eaeb724fc88?auto=format&fit=crop&w=700&h=440&q=75" alt="Peak Roofing Co. demo" loading="lazy" width="700" height="440">
           </div>
-          <div class="work-info"><h3>Roofing company</h3><span class="tag">Concept</span><a href="#contact" class="work-link">Open live demo →</a></div>
+          <div class="work-info"><h3>Roofing company</h3><span class="tag">Live demo</span><a href="demos/roofing/" class="work-link">Open live demo →</a></div>
         </article>
         <article class="card glass work-card reveal" data-cat="fitness" style="--accent:#1D4FD0">
           <div class="browser"><div class="dots"><i></i><i></i><i></i></div>
-            <div class="screen"><b class="t"></b><b class="s"></b><b class="btnph"></b><div class="tiles"><b></b><b></b><b></b></div></div>
+            <img class="shot" src="https://images.unsplash.com/photo-1728486145245-d4cb0c9c3470?auto=format&fit=crop&w=700&h=440&q=75" alt="Ironline Fitness gym demo" loading="lazy" width="700" height="440">
           </div>
-          <div class="work-info"><h3>Gym</h3><span class="tag">Concept</span><a href="#contact" class="work-link">Open live demo →</a></div>
+          <div class="work-info"><h3>Gym</h3><span class="tag">Live demo</span><a href="demos/gym/" class="work-link">Open live demo →</a></div>
         </article>
         <article class="card glass work-card reveal" data-cat="food" style="--accent:#4A5B7C">
           <div class="browser"><div class="dots"><i></i><i></i><i></i></div>
-            <div class="screen"><b class="t"></b><b class="s"></b><b class="btnph"></b><div class="tiles"><b></b><b></b><b></b></div></div>
+            <img class="shot" src="https://images.unsplash.com/photo-1599974579688-8dbdd335c77f?auto=format&fit=crop&w=700&h=440&q=75" alt="El Pico Tacos food truck demo" loading="lazy" width="700" height="440">
           </div>
-          <div class="work-info"><h3>Taco truck</h3><span class="tag">Concept</span><a href="#contact" class="work-link">Open live demo →</a></div>
+          <div class="work-info"><h3>Taco truck</h3><span class="tag">Live demo</span><a href="demos/taco-truck/" class="work-link">Open live demo →</a></div>
         </article>
         <article class="card glass work-card reveal" data-cat="beauty" style="--accent:#2563EB">
           <div class="browser"><div class="dots"><i></i><i></i><i></i></div>
-            <div class="screen"><b class="t"></b><b class="s"></b><b class="btnph"></b><div class="tiles"><b></b><b></b><b></b></div></div>
+            <img class="shot" src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=700&h=440&q=75" alt="Lumière Nail Studio demo" loading="lazy" width="700" height="440">
           </div>
-          <div class="work-info"><h3>Nail salon</h3><span class="tag">Concept</span><a href="#contact" class="work-link">Open live demo →</a></div>
+          <div class="work-info"><h3>Nail salon</h3><span class="tag">Live demo</span><a href="demos/nail-salon/" class="work-link">Open live demo →</a></div>
         </article>
         <article class="card glass work-card reveal" data-cat="trades" style="--accent:#0B1B3F">
           <div class="browser"><div class="dots"><i></i><i></i><i></i></div>
-            <div class="screen"><b class="t"></b><b class="s"></b><b class="btnph"></b><div class="tiles"><b></b><b></b><b></b></div></div>
+            <img class="shot" src="https://images.unsplash.com/photo-1719324924230-63781a3f18b9?auto=format&fit=crop&w=700&h=440&q=75" alt="Front Range Landscapes demo" loading="lazy" width="700" height="440">
           </div>
-          <div class="work-info"><h3>Landscaping</h3><span class="tag">Concept</span><a href="#contact" class="work-link">Open live demo →</a></div>
+          <div class="work-info"><h3>Landscaping</h3><span class="tag">Live demo</span><a href="demos/landscaping/" class="work-link">Open live demo →</a></div>
         </article>
       </div>
       <div class="demo-cta glass reveal">
