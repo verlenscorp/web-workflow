@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="512" height="512">
+  <g transform="translate(6,-7)">
+    <circle cx="92" cy="108" r="80" fill="#2563EB"/>
+    <circle cx="130" cy="72" r="46" fill="#9ED8FF"/>
+    <circle cx="152" cy="50" r="16" fill="#FFFFFF"/>
+  </g>
+</svg>
